@@ -1,0 +1,32 @@
+/* Container to center content */
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2.5rem auto;
+  padding: 50px 20px; /* Adjust padding for better spacing */
+  max-width: 900px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  color: #555;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}

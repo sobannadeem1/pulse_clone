@@ -1,0 +1,406 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  height: 100vh;
+  background-color: #f0fdf5;
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.highlight-text {
+  position: relative;
+  color: #333;
+  z-index: 1;
+}
+
+.highlight-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #99d4f1;
+  z-index: -1;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  background-color: #2196f3;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.pricing-text {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.pricing-text a {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/* Arrow Styling */
+/* Arrow Styling */
+.arrow {
+  width: 7vw; /* Responsive width based on viewport width */
+  height: 7vw; /* Responsive height based on viewport width */
+  border: solid #2196f3;
+  border-width: 0 1vw 1vw 0; /* Border thickness scales with viewport */
+  transform: rotate(-45deg); /* Keeps the arrow pointing towards the chart */
+  position: absolute;
+  top: 40%; /* You can adjust this based on the viewport size */
+  left: 60%; /* Adjust this as well for responsiveness */
+  animation: moveArrow 2s infinite;
+}
+
+@keyframes moveArrow {
+  0%,
+  100% {
+    transform: translateX(0) rotate(-45deg);
+  }
+  50% {
+    transform: translateX(-1vw) rotate(-45deg); /* Adjusted for responsiveness */
+  }
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+  .arrow {
+    width: 10vw; /* Larger arrow on smaller screens */
+    height: 10vw;
+    border-width: 0 1.5vw 1.5vw 0;
+    top: 35%; /* Adjust top position */
+    left: 55%; /* Adjust left position */
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    width: 12vw; /* Even larger for mobile devices */
+    height: 12vw;
+    border-width: 0 2vw 2vw 0;
+    top: 30%; /* Adjust top position */
+    left: 50%; /* Adjust left position */
+  }
+}
+
+/* Bar Chart Styling */
+.chart-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.bar {
+  width: 30px;
+  background-color: #2196f3;
+  border-radius: 5px;
+}
+
+.green-bar {
+  background-color: #4caf50;
+}
+
+.red-bar {
+  background-color: #f44336;
+}
+.heading {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 10px;
+}
+.quotes-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.quotes-section h2 {
+  font-size: 32px;
+  color: #333;
+}
+
+.quotes-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.quote {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.quote p {
+  margin-bottom: 10px;
+}
+
+.quote strong {
+  font-size: 20px;
+  color: #222;
+}
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #f7f8fa;
+}
+
+.text-side {
+  max-width: 50%;
+}
+
+.text-side h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-side p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.quote-side {
+  max-width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.quote-container {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  color: #34a853;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.author {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+.cta-link {
+  font-size: 0.9rem;
+  color: #34a853;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-link:hover {
+  text-decoration: underline;
+}
+.customer-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f9fafc; /* Adjust according to the background */
+}
+
+.left-content {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.left-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #111;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #28a745;
+  border: 2px solid #28a745;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.right-content {
+  flex: 1;
+  background-color: white;
+  padding: 30px;
+  border: 1px solid #eaeaea;
+  max-width: 400px;
+}
+
+.quote {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.author {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px; /* Add padding for better clickable area */
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+.feature-section {
+  padding: 50px;
+  text-align: center;
+}
+
+.feature-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.feature-header p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Centers the items horizontally */
+  align-items: start; /* Aligns the items vertically at the start */
+}
+
+.feature-item {
+  text-align: center; /* Centers the content inside each feature item */
+}
+
+.feature-section {
+  max-width: 1200px; /* Adjust this as per your layout needs */
+  margin: 0 auto; /* Centers the section on the page */
+  padding: 20px; /* Adds some padding around the section */
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.feature-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+}
+.feature-section2 {
+  background: url("/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background: #00a971;
+  color: white;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.feature-header2 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.feature-header2 h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.feature-header2 p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.cta-button2 {
+  background-color: white;
+  color: #00a971;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button2:hover {
+  background-color: #f0f0f0;
+}

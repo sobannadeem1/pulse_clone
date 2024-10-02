@@ -1,0 +1,113 @@
+/* Container styles */
+.footer-container {
+  background-color: #101010;
+  padding: 40px 20px;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Banner styling */
+.trial-banner {
+  border-width: 0;
+  background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+  text-align: center;
+  padding: 30px 0;
+}
+
+.trial-banner h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Footer content layout */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  align-items: flex-start;
+}
+
+/* Logo and button */
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.trial-button {
+  background-color: #00d084;
+  color: #000;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.trial-button:hover {
+  background-color: #00a96b;
+}
+
+/* Footer links */
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.footer-column {
+  margin-right: 40px;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #00d084;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack footer elements vertically */
+    align-items: center; /* Center align items */
+  }
+
+  .footer-links {
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for links */
+    align-items: center; /* Center align links */
+    margin-bottom: 20px; /* Space below links */
+  }
+
+  .footer-column {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 20px; /* Add space between columns */
+  }
+
+  .trial-button {
+    margin-top: 20px; /* Space between button and links */
+    width: 100%; /* Make button full-width */
+    text-align: center; /* Center text in button */
+  }
+}

@@ -1,0 +1,110 @@
+.pricing-container {
+  width: 80%;
+  margin: 2.5rem auto;
+  font-family: Arial, sans-serif;
+}
+.intro-section {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 100px; /* Adjust this value based on your navbar height */
+}
+
+.intro-section h1 {
+  font-size: 2.5rem;
+  color: #1b6030; /* Pulse green */
+  margin-bottom: 10px;
+}
+
+.intro-section h1 strong {
+  font-weight: bold;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.intro-section ul {
+  list-style: disc;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.plans-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+
+.plan {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.plan h2 {
+  font-size: 1.5rem;
+  color: #1b6030;
+}
+
+.plan .price {
+  font-size: 2rem;
+  color: #1b6030;
+}
+
+.plan ul {
+  list-style: disc;
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+.cta-button {
+  background-color: #1b6030;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background-color: #145021;
+}
+
+.premium {
+  background-color: #e8f8e8; /* Slightly different for premium */
+}
+
+.testimonials {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f0f9f0;
+  margin-top: 40px;
+}
+
+.testimonials p {
+  font-size: 1.2rem;
+}
+
+.faq-section {
+  margin-top: 40px;
+}
+
+.faq-section h3 {
+  font-size: 1.5rem;
+  color: #1b6030;
+  margin-bottom: 20px;
+}
+
+.faq h4 {
+  font-size: 1.2rem;
+  color: #1b6030;
+}
+
+.faq p {
+  margin-bottom: 20px;
+}

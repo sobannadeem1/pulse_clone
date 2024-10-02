@@ -1,0 +1,53 @@
+/* Styles for the header */
+.custom-header {
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically if needed */
+  text-align: center; /* Center text */
+  padding: 20px;
+  margin-top: 6rem;
+}
+
+.custom-header h1 {
+  font-size: 48px; /* Adjust font size for prominence */
+  font-weight: 700; /* Use bold weight */
+  line-height: 1.2; /* Adjust line height */
+  color: #000; /* Set text color to black */
+  margin: 0; /* Remove default margin */
+  letter-spacing: 1px; /* Increase letter spacing */
+  font-family: "Helvetica", "Arial", sans-serif; /* Use a sans-serif font for a modern look */
+}
+
+.image1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  height: 100%; /* Full height of the viewport */
+  text-align: center; /* Center text within each item */
+}
+
+/* Styles for the content container */
+.content-container {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text */
+  padding: 20px; /* Optional padding for spacing */
+}
+
+/* Style for the image */
+.center-image {
+  max-width: 100%; /* Ensure responsiveness */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the text content */
+.text-content {
+  max-width: 800px; /* Limit width for readability */
+  margin-top: 20px; /* Space between image and text */
+  font-size: 18px; /* Font size for the text */
+  line-height: 1.6; /* Line height for better readability */
+  color: #333; /* Text color */
+}
